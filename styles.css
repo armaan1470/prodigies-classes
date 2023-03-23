@@ -80,6 +80,18 @@ body {
   font-family: "biennalesemibold";
   color: #00028a;
   margin-bottom: 2.5rem;
+  position: relative;
+}
+.text h1::before{
+  content: "";
+  position: absolute;
+  background-image: url("./Content/PNG/3stick.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left:-20px;
+  top:-10px;
 }
 .text span:first-child {
   background: -webkit-linear-gradient(yellow, red);
@@ -88,12 +100,23 @@ body {
 }
 .text span:last-child {
   background: -webkit-linear-gradient(
-    90deg,
+    180deg,
     rgb(0, 121, 255) 20%,
     rgb(0, 187, 225)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position:relative;
+}
+.text span:last-child::after{
+  content: "";
+  position: absolute;
+  background-image: url("./Content/Icons/line.svg");
+  background-size: contain;
+  width: 200px;
+  height: 12px;
+  bottom: 0px;
+  right: -10px;
 }
 
 .text div:last-child {
@@ -166,17 +189,17 @@ body {
 .lp2 p:first-child {
   background-image: -webkit-linear-gradient(
     180deg,
-    rgb(44, 191, 199) 30%,
-    rgb(70, 238, 170) 70%
+    rgb(44, 191, 199) 20%,
+    rgb(70, 238, 170)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .lp3 p:first-child {
   background-image: -webkit-linear-gradient(
-    180deg,
-    rgb(18, 112, 227) 20%,
-    rgb(99, 194, 255) 80%
+    150deg,
+    rgb(18, 112, 227) 30%,
+    rgb(99, 194, 255) 
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,7 +208,7 @@ body {
   background-image: -webkit-linear-gradient(
     180deg,
     rgb(129, 34, 239) 20%,
-    rgb(255, 99, 224) 80%
+    rgb(255, 99, 224) 
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,7 +246,7 @@ body {
   justify-content: end;
   align-items: center;
   position: relative;
-  font-family: "biennalemedium";
+  font-family: "biennalesemibold";
   font-size: 1.5rem;
   color: #d6a100;
 }
@@ -233,10 +256,24 @@ body {
   position: absolute;
   top: 60%;
 }
-.graduation h1 {
+.graduation p {
   margin-bottom: 3rem;
+  font-size: 3rem;
 }
+.graduation span{
+  position: relative;
+}
+.graduation span::after{
+  content:"";
+  position: absolute;
+  background-image: url("./Content/Icons/line.svg");
+  background-size: cover;
+  width: 320px;
+  height: 10px;
+  bottom: -5px;
+  right: 0px;
 
+}
 .arrows:first-child {
   left: 150px;
 }
@@ -289,7 +326,7 @@ body {
 .text2 h1 {
   font-family: "biennalesemibold";
   font-size: 4rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
   color: #e34c00;
   position: relative;
 }
@@ -300,7 +337,7 @@ body {
   background-size: contain;
   width: 90px;
   height: 20px;
-  bottom: 20px;
+  bottom: 14px;
   right: 100px;
 }
 
@@ -315,7 +352,8 @@ body {
 }
 .text2 p {
   font-size: 1.3rem;
-  color: rgb(0 0 0/0.7);
+  color: rgb(0 0 0/0.6);
+  font-weight: 500;
 }
 .text2 .btn,
 .text3 .btn {
@@ -335,10 +373,11 @@ body {
   padding: 2rem;
 }
 .text3 h1 {
-  padding: 1rem 5rem 0 12rem;
-  font-size: 3rem;
+  padding: 1rem 5rem 0 15rem;
+  font-size: 3.1rem;
   font-family: "biennalesemibold";
   color: #00028a;
+  line-height: 3.7rem;
 }
 .text3 span {
   background: -webkit-linear-gradient(180deg, red, rgb(255, 112, 0));
@@ -348,13 +387,13 @@ body {
 }
 
 .text3 p {
-  padding: 1rem 5rem 0 12rem;
+  padding: 1rem 4rem 0 15rem;
   font-size: 1.3rem;
   font-family: "biennalemedium";
   opacity: 0.6;
 }
 .text3 .btn {
-  margin: 1rem 5rem 0 12rem;
+  margin: 1rem 5rem 0 15rem;
 }
 
 .text3 h1 span::before {
@@ -370,12 +409,12 @@ body {
 
 .ilustrate-3 {
   background-image: url("./Content/PNG/benefits-back.png");
-  width: 50%;
+  width: 40%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: start;
-  padding-right: 6rem;
+  padding-right: 4rem;
   background-size: contain;
 }
 .ilustrate-3 img {
@@ -500,6 +539,8 @@ body {
   bottom: -10px;
   right: -10px;
 }
+
+/* testimonial  */
 .testimonial {
   width: 100vw;
   background-image: url("./Content/JPEG/Testimonaial.jpg");
