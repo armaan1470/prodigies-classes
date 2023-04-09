@@ -82,7 +82,7 @@ body {
   margin-bottom: 2.5rem;
   position: relative;
 }
-.text h1::before{
+.text h1::before {
   content: "";
   position: absolute;
   background-image: url("./Content/PNG/3stick.png");
@@ -90,8 +90,8 @@ body {
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  left:-20px;
-  top:-10px;
+  left: -20px;
+  top: -10px;
 }
 .text span:first-child {
   background: -webkit-linear-gradient(yellow, red);
@@ -106,9 +106,9 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position:relative;
+  position: relative;
 }
-.text span:last-child::after{
+.text span:last-child::after {
   content: "";
   position: absolute;
   background-image: url("./Content/Icons/line.svg");
@@ -199,7 +199,7 @@ body {
   background-image: -webkit-linear-gradient(
     150deg,
     rgb(18, 112, 227) 30%,
-    rgb(99, 194, 255) 
+    rgb(99, 194, 255)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +208,7 @@ body {
   background-image: -webkit-linear-gradient(
     180deg,
     rgb(129, 34, 239) 20%,
-    rgb(255, 99, 224) 
+    rgb(255, 99, 224)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -260,11 +260,11 @@ body {
   margin-bottom: 3rem;
   font-size: 3rem;
 }
-.graduation span{
+.graduation span {
   position: relative;
 }
-.graduation span::after{
-  content:"";
+.graduation span::after {
+  content: "";
   position: absolute;
   background-image: url("./Content/Icons/line.svg");
   background-size: cover;
@@ -272,7 +272,6 @@ body {
   height: 10px;
   bottom: -5px;
   right: 0px;
-
 }
 .arrows:first-child {
   left: 150px;
@@ -280,21 +279,100 @@ body {
 .arrows:last-child {
   right: 150px;
 }
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 70vw;
+
+.splide__sr {
+  display: none;
 }
+
+.splide__arrow--prev svg {
+  transform: none;
+}
+
+.splide__arrow--next,
+.splide__arrow--prev {
+  background-color: #e0ca89;
+  width: 60px;
+  height: 60px;
+}
+
+#splide-2 .splide__arrow--next,
+#splide-2 .splide__arrow--prev {
+  background-color: #18498a;
+}
+
+#splide-3 .splide__arrow--next,
+#splide-3 .splide__arrow--prev {
+  background-color: transparent;
+  width: 60px;
+  border: 1px solid white;
+  height: 60px;
+}
+
+.splide__arrow svg {
+  fill: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke-width: 4rem;
+}
+
+.splide__arrow--next svg {
+  transform: scaleX(-1);
+}
+
 .slider-img {
-  height: 450px;
-  margin: 10px 10px 3rem 10px;
+  height: 350px;
+  margin: 30px;
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 2px 2px 30px 5px rgb(233, 233, 233);
 }
-.carousel img:is(:first-child, :last-child) {
+
+.splide__slide:not(.is-active) > .slider-img {
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.splide__slide.is-active:not(.is-visible) > .slider-img {
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.splide__slide.is-visible.is-active > .slider-img {
+  height: 450px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .splide__slide.is-active:not(.is-visible) + .splide__slide > .slider-img,
+.splide__slide.is-active:not(.is-visible)
+  + .splide__slide
+  + .splide__slide
+  > .slider-img {
   height: 400px;
+} */
+
+.splide {
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  height: 500px;
+  align-items: center;
+}
+
+.splide__list {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+}
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+
+.site .splide__pagination {
+  width: 300px;
+  height: 30px;
+  color: red;
 }
 
 /* about us section  */
@@ -511,7 +589,7 @@ body {
   color: #00028a;
   position: relative;
 }
-.team p::after{
+.team p::after {
   content: "";
   position: absolute;
   background-image: url("./Content/PNG/3stick.png");
@@ -519,8 +597,8 @@ body {
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  top:60px;
-  left:40px;
+  top: 60px;
+  left: 40px;
 }
 .team p span {
   background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
@@ -570,10 +648,10 @@ body {
   font-family: "biennalemedium";
   padding: 1rem 0 3rem 0;
 }
-.text4 p span{
+.text4 p span {
   position: relative;
 }
-.text4 p span::after{
+.text4 p span::after {
   content: "";
   position: absolute;
   background-image: url("./Content/Icons/line.svg");
@@ -589,7 +667,7 @@ body {
   justify-content: center;
 }
 .tweet-img {
-  width: 80%;
+  width: 57%;
 }
 .ilustrate-4 .arrows:first-child {
   left: 250px;
@@ -617,33 +695,32 @@ body {
   font-size: 2.2rem;
   color: white;
 }
-.social-icons i{
-  margin:5px;
+.social-icons i {
+  margin: 5px;
 }
 
-.footer .links{
+.footer .links {
   display: flex;
   justify-content: space-between;
-  color:white;
-  padding:2rem 0;
-  font-size: .9rem;
-
+  color: white;
+  padding: 2rem 0;
+  font-size: 0.9rem;
 }
-.links .nav-links{
+.links .nav-links {
   display: flex;
   list-style-type: none;
   font-weight: 600;
 }
-.links .nav-links li{
-  padding-right:2.2rem ;
+.links .nav-links li {
+  padding-right: 2.2rem;
   position: relative;
 }
-.nav-links li:not(:last-child)::after{
-  content:"";
-  height:10px;
-  border:1px solid;
+.nav-links li:not(:last-child)::after {
+  content: "";
+  height: 10px;
+  border: 1px solid;
   position: absolute;
-  right:15px;
-  bottom:4px;
-  color:#3280ff;
+  right: 15px;
+  bottom: 4px;
+  color: #3280ff;
 }

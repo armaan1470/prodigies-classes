@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      href="
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+      "
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       referrerpolicy="no-referrer"
@@ -78,8 +84,8 @@
     </div>
 
     <!-- graduation  -->
-    <div class="graduation">
-      <p>Our <span>  International </span>Graduates</p>
+    <!-- <div class="graduation">
+      <p>Our <span> International </span>Graduates</p>
       <div class="wrapper">
         <img src="./Content/PNG/slider button.png" class="arrows" alt="" />
         <div class="carousel">
@@ -100,6 +106,63 @@
           />
         </div>
         <img src="./Content/PNG/slider button 1.png" class="arrows" alt="" />
+      </div>
+    </div> -->
+
+    <div class="graduation">
+      <p>Our <span> International </span>Graduates</p>
+      <div
+        class="splide"
+        role="group"
+        id="splide-1"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <img
+                src="./Content/JPEG/Int. Graduate.jpg"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+            <div class="splide__slide">
+              <img
+                src="./Content/JPEG/Int. Graduate 1.jpg"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+            <div class="splide__slide">
+              <img
+                src="./Content/JPEG/Int. Graduate 2.jpg"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+            <div class="splide__slide">
+              <img
+                src="./Content/PNG/Graduates-3.png"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+            <div class="splide__slide">
+              <img
+                src="./Content/PNG/Graduates-4.png"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+            <div class="splide__slide">
+              <img
+                src="./Content/PNG/Graduates-5.png"
+                class="slider-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -167,7 +230,7 @@
         <img src="./Content/JPEG/Courses 6.jpg" alt="" />
       </div>
     </div>
-    <div class="team">
+    <!-- <div class="team">
       <p>Our Prodigious <span> Team </span></p>
       <div class="wrapper">
         <img src="./Content/PNG/slider button 2.png" class="arrows" alt="" />
@@ -178,13 +241,47 @@
         </div>
         <img src="./Content/PNG/slider button 3.png" class="arrows" alt="" />
       </div>
+    </div> -->
+
+    <div class="team">
+      <p>Our Prodigious <span> Team </span></p>
+      <div
+        class="splide"
+        role="group"
+        id="splide-2"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <img src="./Content/JPEG/Tutor-1.jpg" class="slider-img" alt="" />
+            </div>
+            <div class="splide__slide">
+              <img src="./Content/JPEG/Tutor-2.jpg" class="slider-img" alt="" />
+            </div>
+            <div class="splide__slide">
+              <img src="./Content/JPEG/Tutor-3.jpg" class="slider-img" alt="" />
+            </div>
+            <div class="splide__slide">
+              <img src="./Content/PNG/Team -1.png" class="slider-img" alt="" />
+            </div>
+            <div class="splide__slide">
+              <img src="./Content/PNG/Team -2.png" class="slider-img" alt="" />
+            </div>
+            <div class="splide__slide">
+              <img src="./Content/PNG/Team -3.png" class="slider-img" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="testimonial">
+
+    <!-- <div class="testimonial">
       <div class="text4">
         <p>testimonials</p>
         <p>
           What Our Students/Parents<br />
-          are <span>  saying </span>about us?
+          are <span> saying </span>about us?
         </p>
       </div>
       <div class="ilustrate-4">
@@ -200,7 +297,40 @@
           <img src="./Content/PNG/slider button 5.png" class="arrows" alt="" />
         </div>
       </div>
+    </div> -->
+
+    <div class="testimonial">
+      <div class="text4">
+        <p>testimonials</p>
+        <p>
+          What Our Students/Parents<br />
+          are <span> saying </span>about us?
+        </p>
+      </div>
+      <div
+        class="splide"
+        role="group"
+        id="splide-3"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="ilustrate-4">
+          <div class="wrapper">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="testcard splide__slide">
+                  <img
+                    src="./Content/PNG/testimonials.png"
+                    class="tweet-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="footer">
       <div class="icons">
         <div class="white-logo">
@@ -215,17 +345,70 @@
       </div>
       <hr />
       <div class="links">
-          <ul class="nav-links">
-            
-            <li>Terms & Condition</li>
-            <li>Privacy Policy</li>
-            <li>About Us </li>
-            <li>Courses</li>
-            <li>Conatact US</li>
-
-          </ul>
+        <ul class="nav-links">
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+          <li>About Us</li>
+          <li>Courses</li>
+          <li>Conatact US</li>
+        </ul>
         <b>&copy; 2023 All Rights Reserved.</b>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      new Splide("#splide-1", {
+        type: "loop",
+        perPage: 3,
+        focus: "center",
+        pagination: false, // hide pagination
+      }).mount();
+
+      new Splide("#splide-2", {
+        type: "loop",
+        perPage: 3,
+        focus: "center",
+        pagination: false, // hide pagination
+      }).mount();
+
+      // get reference to the slider element
+      const slider = document.querySelector("#splide-3");
+
+      // get reference to the list element within the slider
+      const sliderList = slider.querySelector(".splide__list");
+
+      // create an array of image URLs
+      const imageUrls = [
+        "./Content/PNG/1.png",
+        "./Content/PNG/2.png",
+        "./Content/PNG/3.png",
+        "./Content/PNG/4.png",
+        "./Content/PNG/5.png",
+        "./Content/PNG/6.png",
+        "./Content/PNG/7.png",
+        "./Content/PNG/8.png",
+        "./Content/PNG/9.png",
+        "./Content/PNG/10.png",
+        "./Content/PNG/testimonials.png",
+      ];
+
+      // loop through the image URLs and create an <li> element with an <img> element within it
+      imageUrls.forEach((url) => {
+        const listItem = document.createElement("div");
+        const img = document.createElement("img");
+        listItem.classList.add("splide__slide"); // add the splide__slide class to the div element
+        img.src = url;
+        listItem.appendChild(img);
+        sliderList.appendChild(listItem);
+      });
+
+      new Splide("#splide-3", {
+        type: "loop",
+        perPage: 1,
+        focus: "center",
+        pagination: false, // hide pagination
+      }).mount();
+    </script>
   </body>
 </html>
